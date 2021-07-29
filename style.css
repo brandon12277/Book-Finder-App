@@ -1,0 +1,231 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    
+}
+.animate__animated.animate__fadeIn{
+    --animate-duration: 4s;
+}
+body{
+    background: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)),url("janko-ferlic-sfL_QOnmy00-unsplash\ \(2\).jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin:0%;
+    padding:0%;
+    overflow:hidden;
+   
+}
+.container-fluid{
+    padding:0%;
+    margin:0%;
+    top:20%;
+    position:relative;
+    width:100%;
+    height:50%;
+   
+    
+    
+}
+.heading{
+    text-align:center;
+     font-family: 'Montserrat', sans-serif;
+     color:aqua;
+     animation-name: switch;
+     animation-duration: 4s;
+     animation-iteration-count: infinite;
+     animation-timing-function:ease-in-out;
+}
+.searchbar{
+    display:flex;
+    text-align:center;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 700;
+     width:100%;
+     flex-direction: column;
+     align-items:center;
+     justify-content: center;
+     transition: 2s;
+
+}
+.searchtools{
+    display:flex;
+    text-align:center;
+     font-family: 'Montserrat', sans-serif;
+     width:100%;
+     flex-direction: row;
+     align-items:center;
+     justify-content: center;
+     
+
+}
+.searchbartool{
+    font-size:110%;
+    font-family: 'Montserrat', sans-serif;
+    outline:none;
+    border:none;
+    color:black;
+    outline:none;
+    border:none;
+    font-family: 'Montserrat', sans-serif;
+    width:40%;
+    border-radius: 0%;
+    
+}
+.searchheading{
+    visibility:hidden;
+    transition: 2s;
+}
+.searchbutton{
+    align-items:center;
+    transform: scale(1.35);
+    background-color:yellow;
+    outline:hidden;
+    border:none;
+    border-radius: 0px;
+    height:100%;
+}
+@keyframes switch{
+    0%{
+        color:yellow;
+    }
+    50%{
+        color:orange;
+        text-shadow: orange 0px 0px 10px;
+    }
+    100%{
+        color:yellow;
+    }
+}
+#bookList{
+    font-family: 'Montserrat', sans-serif;
+    display:flex;
+    visibility: hidden;
+    flex-direction: column;
+    width:95%;
+    margin-left:2%;
+    grid-gap:10px;
+}
+.books{
+    background-color: bisque;
+    display:flex;
+    background-color:bisque;
+    flex-direction:column;
+    width:50%;
+    
+}
+.bookdetails{
+    margin:0%;
+    display:flex;
+    flex-direction: row;
+    grid-gap:10%;
+    height:56%;
+}
+.rows{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    grid-gap:10px;
+}
+.titleheading{
+    font-size: 230%;
+}
+.readbutton{
+    margin-bottom:5%;
+    border-radius: 6%;
+    border-color: burlywood;
+    border-color:darkgoldenrod;
+    border-style: solid;
+    outline: none;
+    background-color: coral;
+    text-decoration-line: none;
+    color:black;
+    height: 10%;
+    box-shadow: bisque 0px 0px 5px;
+}
+.notavailable{
+        margin-left:40%;
+}
+.footer{
+    background-color: rgb(153, 129, 103);
+    width:100%;
+    height:6%;
+    position:fixed;
+    bottom:0;
+    text-align:center;
+    font-family: 'Montserrat', sans-serif;
+    align-items:center;
+    color: black;
+    
+}
+@media only screen and (max-width:800px ){
+    .container-fluid{
+        margin-top:20%;
+        
+    }
+    .heading{
+       font-size:150%;
+    }
+    .searchbartool{
+        width:60%;
+    }
+    .books{
+        background-color: bisque;
+        display:flex;
+        background-color:bisque;
+        flex-direction:column;
+        width:50%;
+        
+    }
+    .rows{
+        flex-direction:column;
+    }
+    .books{
+        width:100%;
+    }
+}
+@media only screen and (max-width:500px ){
+    .container-fluid{
+        margin-top:35%;
+        
+    }
+    .heading{
+       font-size:150%;
+    }
+    .searchbartool{
+        width:90%;
+    }
+    .rows{
+        flex-direction:column;
+    }
+    .titleheading{
+        font-size: 200%;
+    }
+    .books{
+        width:100%;
+    }
+}
+@media only screen and (max-width:400px ){
+    .container-fluid{
+        margin-top:50%;
+        
+    }
+    .heading{
+       font-size:130%;
+    }
+    .searchbartool{
+        width:90%;
+    }
+    .rows{
+        flex-direction:column;
+    }
+    .titleheading{
+        font-size: 200%;
+    }
+    .books{
+        width:100%;
+    }
+    #bookList{
+        width:100%;
+    }
+}
