@@ -77,6 +77,7 @@ body{
     transition: 2s;
 }
 .searchbutton{
+    cursor:pointer;
     align-items:center;
     transform: scale(1.35);
     background-color:yellow;
@@ -131,11 +132,11 @@ body{
     font-size: 230%;
 }
 .readbutton{
+    cursor:pointer;
     margin-bottom:5%;
-    border-radius: 6%;
-    border-color: burlywood;
-    border-color:darkgoldenrod;
-    border-style: solid;
+    padding:1%;
+    border-radius: 0.45em;
+    border : none;
     outline: none;
     background-color: coral;
     text-decoration-line: none;
